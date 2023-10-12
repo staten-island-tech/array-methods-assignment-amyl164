@@ -39,11 +39,11 @@ const teachers = [{name: 'Whalen', classes: ['AP Comp Sci', 'Freshman Comp Sci',
                   {name: "callahan", classes: ["Sophmore Russian", "Junior Russian"], hair: true, room: '317', college: 'idk some irish school',},
 ];
 
-const result = classes.filter((classes) => classes.hair !==true)
-console.log(result);
-
 teachers.forEach((teacher)=> console.log(teacher.name));
 teachers.forEach((teacher)=> teacher.classes.forEach((classes) => console.log(classes)))
  teachers.forEach((teacher)=> console.log(teacher.hair));
  teachers.forEach((teacher)=> console.log(teacher.room));
  teachers.forEach((teacher)=> console.log(teacher.college));
+
+ const no_hair = teachers.filter((teacher) => teacher.hair !==true)
+console.log(no_hair);
